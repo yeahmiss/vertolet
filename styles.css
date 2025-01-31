@@ -16,6 +16,9 @@ p, h1{
 
 	z-index: 4;
 }
+ header nav a{
+	text-decoration: none ;
+}
 
 nav {
 	text-decoration: none;
@@ -58,12 +61,14 @@ header nav{
 	gap:22px;
 
 }
+header nav a:active {
+  text-decoration: underline !important;
+}
 header nav a{
 	color:white;
 	cursor: pointer;
 	font-weight:  600;
-	font-size: 18px;
-
+	font-size: 18px;sss
 }
 
 header nav a:hover{
@@ -428,7 +433,7 @@ iframe{
 	font-size: 90px;
 	font-weight: 600;
 	color:white;
-	margin-bottom:35px;
+	margin-bottom:60px;
 }
 .wrapper-accordion{
 	display: flex;
@@ -444,12 +449,14 @@ iframe{
 	font-weight: 200;
 	margin-right:25px;
 }
+
 .title{
 	font-size: 30px;
 	font-weight: bold;
 	color:white;
 	margin-left:43px;
 	white-space: nowrap;
+	margin-bottom:40px;
 }
 .the-content{
 	font-size: 20px;
@@ -458,6 +465,7 @@ iframe{
 	color:white;
 	margin-left:40px;
 	width: 666px;
+	margin-top: -40px;
 
 }
 .helicopter{
@@ -506,7 +514,7 @@ iframe{
 	width: 800px;
   display: flex;
   flex-direction: column;
-;
+  margin-right: 145px;
   margin-top: 73px;
 
 
@@ -1044,15 +1052,22 @@ padding-bottom: 10px;
 	display:none;
 }
 
+
 .hidden-plane{
 	display:none;
 }
 @media (max-width:1919px){
+	.full{
+		width: 46.89vw;
+	}
+.inner-content{
+		margin-right:  5.55vw;
+	}
 	.half{
 		width: 46.8vw;
 	}
 	.full-screen{
-		padding-bottom: 1vw;
+		
 	}
 	.f-p{
 		margin-bottom: 1vw;
@@ -1137,6 +1152,10 @@ width:  42.15vw;
 
 }
 @media (max-width:1660px){
+	.inner-content{
+		margin-right:  0;
+	}
+	
 	.i-thx{
 		margin-left: 6vw !important;
 	}
@@ -1663,8 +1682,9 @@ width: 	2vw;
 
  .second{
 	display: none;
-	border: 1px solid rgba(181, 181, 181, 1);
+
 	background-color: rgba(181, 181, 181, 0.6) ;
+	border-bottom: 0;
 
 
 }
@@ -1672,6 +1692,9 @@ width: 	2vw;
 	border: 0px;
 }
 .hover:hover{
+	color:#A7DAF7;
+}
+.large-number:hover{
 	color:#A7DAF7;
 }
 .wrapper-accordion{
@@ -1770,10 +1793,7 @@ width: 	2vw;
 	top: 0;
 }
 
-  header nav a{
-	text-decoration: none ;
-}
-
+ 
 /* Default state: the image as normal */
 .parent-d img {
     content: url(img/w-arr.svg);
@@ -1812,15 +1832,10 @@ width: 	2vw;
 		cursor: pointer;
 	}
 	.active{
-		background-color: white;
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  border-radius: 50%;
+		
+ 
+  text-decoration: underline;
+  color:white;
 	}
 
 	.nav-btn {
@@ -1852,7 +1867,7 @@ width: 	2vw;
 
 header nav a.acitve{
 		color:white;
-		text-decoration: underline;
+		text-decoration: underline !important;
 
 	}
 	.full-screen ul{
@@ -1947,4 +1962,7 @@ display:none;
 	right: 0;
 	top: 0;
 
+}
+.full{
+	width: 900px;
 }

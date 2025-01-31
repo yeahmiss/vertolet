@@ -261,3 +261,41 @@ document.getElementById('send').addEventListener('click', function() {
 document.querySelector('.w-close').addEventListener('click', function() {
     document.querySelector('.thx').style.display = 'none';
 });
+// Step 1: Set up the Intersection Observer
+// Set up the Intersection Observer
+let lastActiveLink = null; // To track the last active link
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const sectionId = entry.target.id;
+    const links = document.querySelectorAll(`header nav a[href="#${sectionId}"]`);
+
+    // Check if the section is more than 50% in view (or another threshold you want)
+    if (entry.isIntersecting) {
+      // Ensure only one link has the 'active' class at any given time
+      if (lastActiveLink && lastActiveLink !== links[0]) {
+        lastActiveLink.classList.remove('active'); // Remove the 'active' class from the last active link
+      }
+
+      // Add 'active' class to the current link(s)
+      links.forEach(link => {
+        link.classList.add('active');
+      });
+
+      // Update the last active link to the current link
+      lastActiveLink = links[0];
+    } else {
+      // Remove active class when the section is out of view
+      links.forEach(link => {
+        link.classList.remove('active');
+      });
+    }
+  });
+}, {
+  threshold: 0.5 // Trigger when 50% of the section is in view
+});
+
+// Start observing each section
+document.querySelectorAll('section').forEach(section => {
+  observer.observe(section);
+});
