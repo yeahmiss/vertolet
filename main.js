@@ -210,7 +210,7 @@ window.addEventListener('scroll', function() {
   
   const scrollY = window.scrollY;
 
-  if (scrollY > 100) { // You can adjust the scroll position threshold as needed
+  if (scrollY > 1080) { // You can adjust the scroll position threshold as needed
     first.style.display = 'none';
     second.style.display = 'block'; // Show second by changing display to 'block'
   } else {
@@ -298,4 +298,27 @@ const observer = new IntersectionObserver((entries) => {
 // Start observing each section
 document.querySelectorAll('section').forEach(section => {
   observer.observe(section);
+});
+
+document.querySelector('.kontrakt').addEventListener('mouseenter', function() {
+    document.querySelector('.let').style.color = 'white';
+});
+document.querySelector('.partner').addEventListener('mouseenter', function() {
+    document.querySelector('.let').style.color = 'white';
+});
+
+document.querySelector('.kontrakt').addEventListener('mouseleave', function() {
+    document.querySelector('.let').style.color = '#A7DAF7';
+});
+document.querySelector('.popup').addEventListener('click', function(event) {
+  event.preventDefault(); // Prevents any default behavior (e.g., form submission, link navigation)
+  
+  const popupShow = document.querySelector('.popup-show');
+  popupShow.style.display = (popupShow.style.display === 'block') ? 'none' : 'block';
+});
+
+document.querySelector('.c-c').addEventListener('click', function(event) {
+  event.preventDefault(); // Prevent any default action if necessary
+  const popupShow = document.querySelector('.popup-show');
+  popupShow.style.display = 'none';
 });
