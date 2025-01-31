@@ -11,19 +11,36 @@
 <body>
 
    <div class="for-banner">
-           <header>
-            <div class="header-container">
+           <header class="first">
+            <div class="header-container first">
             <img  class="logo" src="img/logo.svg">
             <input id="checkbox-id" type="checkbox" name="menu-mobile" value="value">
             <label for="checkbox-id"><i class="fa-solid fa-bars"></i></label>
                <nav>
-                    <a href="">О компании</a>
-                    <a href="">Деятельность</a>
-                    <a href="">Услуги</a>
-                    <a href="">Производство ДСЕ</a>
-                    <a href="">Сертификаты</a>
-                    <a href="">Партнеры</a>
-                    <a href="">Контакты</a>
+                    <a href="#about" >О компании</a>
+                    <a href="#deyatelnost">Деятельность</a>
+                    <a href="#uslugi">Услуги</a>
+                    <a href="#proiz">Производство ДСЕ</a>
+                    <a href="#cert">Сертификаты</a>
+                    <a href="#part">Партнеры</a>
+                    <a href="#contact">Контакты</a>
+               </nav>
+                </div>
+           </header>
+            <header class="second">
+            <div class="header-container second-header">
+            <img  class="logo" src="img/logo.svg">
+            <input id="checkbox-id" type="checkbox" name="menu-mobile" value="value">
+            <label for="checkbox-id"><i class="fa-solid fa-bars"></i></label>
+               <nav>
+                    <a href="#about">О компании</a>
+                    <a href="#deyatelnost">Деятельность</a>
+                    <a href="#uslugi">Услуги</a>
+                    <a href="#proiz">Производство ДСЕ</a>
+                    <a href="#cert">Сертификаты</a>
+                    <a href="#part">Партнеры</a>
+                    <a href="">Новости</a>
+                    <a href="#contact">Контакты</a>
                </nav>
                 </div>
            </header>
@@ -34,13 +51,13 @@
                 Снабжение<br/>
                 Ремонт
             </h1>
-               <button>Оставить заявку</button>
+              <a href="#contact"><button>  Оставить заявку </button></a>
            </div>
            </div>
    </div>
 
    <div class="container">
-    <div class="about-wrap">
+    <div  id="about" class="about-wrap">
        <h1 class="about-company">О компании</h1>
        <p class="details-company">ООО «ВЕРТО» успешно работает на рынке авиационных услуг, зарекомендовав себя как надежный и оперативный поставщик авиационно-технического имущества (АТИ) для организаций России, стран СНГ и дальнего зарубежья. Мы ценим стабильность в работе, выстраиваем долгосрочные партнерские отношения и обеспечиваем высокое качество и точное соблюдение сроков поставки.</p>
    </div>
@@ -48,7 +65,7 @@
 
 
    <div class="div-right-wrap">
-     <div class="div-right-container">
+     <div id="deyatelnost" class="div-right-container">
         <div class="inner-container">
             <div class="image-wrapper">
              <img class="log-opacity "src="img/sided-image1.jpg">
@@ -69,9 +86,9 @@
 
             <h1 class="large-number"><span style="color:#A7DAF7">10</span>00<span class="h1-dot">+</span></h1>
             <p>
-            <span style="color:#A7DAF7">Лет</span><br/>
-            Партнеров<br/>
-            Контрактов<br/>
+            <span class="hover">Лет</span><br/>
+           <span class="hover">   Партнеров</span><br/>
+             <span class="hover"> Контрактов</span> <br/>
         </p>
         </div>
         </div>
@@ -100,38 +117,102 @@
          
     </div>
     <div>
+
         <img class="last-img" src="img/last-pic.png">
         <p class="text-bottom"> <span class="highlight">Быстрая доставка:  </span> <br/> 
    <span class="under-hg"> Гарантия сроков доставки <br/>
 даже для срочных заказов. </span></p> 
     </div>
-   </div> 
 
+   </div> 
+     <div  id="uslugi" ></div>
 <div class="for-helic">
  <div class="wrapper-helicopter">
     <div class="wrapper-helic">
      <div class="main-content">
          <h1>Услуги</h1>
-
-         <div class="wrapper-accordion">
-            <img  class="minus"src="img/minus.svg">
-             <p class="title">Материально-техническое обеспечение</p>
-             <p class="the-content">ООО "ВЕРТО" предлагает к поставке широкую номенклатуру авиационно-технического имущества гражданских модификаций вертолетов и самолетов.</p>
-      
-         </div>
-     </div>
-     </div>
-     <div>
+ <div>
          <img class="helicopter displayed"src="img/helicopter.png">
           <img class="helicopter hidden"src="img/responsive.png">
          </div>
+         <div class="wrapper-accordion">
+            <img  class="minus"src="img/minus.svg">
+             <img  class="plus"src="img/plus.svg">
+             <p class="title">Материально-техническое обеспечение</p>
+             <p class="the-content">ООО "ВЕРТО" предлагает к поставке широкую номенклатуру авиационно-технического имущества гражданских модификаций вертолетов и самолетов.</p>
+             <div class="parent-link">
+            <a  href=""></a>
+            <img >
+            </div>
+        </div>
+             <div class="wrapper-accordion other">
+            <img  class="minus inactive-content"src="img/minus.svg">
+               <img  class="plus"src="img/plus.svg">
+             <p class="title">Ремонт авиационных агрегатов</p>
+             <p class="the-content inactive-content">ООО «ВЕРТО» — предоставляет услуги по организации ремонта, соответствующие высочайшим стандартам авиационной индустрии..</p>
+             <div class="parent-link">
+            <a  href=""></a>
+            <img >
+            </div>
+         </div>
+
+          <div class="wrapper-accordion other">
+            <img  class="minus inactive-content"src="img/minus.svg">
+               <img  class="plus"src="img/plus.svg">
+             <p class="title">Логистика и таможенное сопровождение</p>
+             <p class="the-content inactive-content">ООО "ВЕРТО" предлагает к поставке широкую номенклатуру авиационно-технического имущества гражданских модификаций вертолетов и самолетов.</p>
+             <div class="parent-link inactive-content">
+            <a class="det " href=""></a>
+            <img  alt="">
+            </div>
+         </div>
+
+     </div>
+     </div>
+ </div>
+
     
  </div>
 </div>
 
+<div class="full-screen">
+    <img  class="clse"src="img/close.svg" alt="">
+    <div class="fs-content">
+      <h1>Производство ДСЕ</h1>
+      <div class="logo-list">
+            <img  class="first-logo" src="img/logo-list1.png">
+            <img class="second-logo" src="img/logo-list2.png">
+            <img class="third-logo" src="img/logo-list3.png">
+        </div>
+      <p class="f-p">ООО «ВЕРТО» — официальный представитель АО НПЦ «Авиатехнологии», компании, специализирующейся на производстве деталей сборочных единиц (ДСЕ) для авиационных и морских двигателей, разработке нестандартизированного технологического оборудования и оснастки, а также ремонте и продлении ресурса авиационной техники и агрегатов.</p>
+      <p class="up-li">
+        В сотрудничестве с АО НПЦ «Авиатехнологии» мы предлагаем:
+      </p>
+      <ul>
+          <li class="p-li"><span class="li-d">•</span>Проектирование и производство:</li>
+          <li class="ch-li"><span class="li-d">•</span>деталей сборочных единиц (ДСЕ) и специального крепежа для авиационных и морских двигателей гражданского назначения;</li>
+          <li class="ch-li"><span class="li-d">•</span>технологического оборудования;</li>
+          <li class="ch-li"><span class="li-d">•</span>продукции по отраслевым и государственным стандартам (ОСТ, ГОСТ).</li>
+          <li class="p-li"><span class="li-d">•</span>Производство и ремонт гидравлического оборудования, включая:</li>
+          <li class="ch-li"><span class="li-d">•</span>гидроопоры, телескопические и стабилизирующие гидроцилиндры.</li>
+          <li class="p-li" ><span class="li-d">•</span>Разработку и производство:</li>
+          <li class="ch-li"><span class="li-d">•</span>резинотехнических изделий (РТИ);</li>
+          <li class="ch-li"><span class="li-d">•</span>деталей по образцам.</li>
+          <l  class="p-li" i><span class="li-d">•</span>Проектирование:</li>
+          <li class="ch-li"><span class="li-d">•</span>штампов, станочной оснастки, контрольных приспособлений и инструментов для гидроиспытаний.</li>
+          <li class="p-li"> <span class="li-d">•</span>Создание конструкторской документации в соответствии с требованиями ЕСКД.</li>
+      </ul>
+      <p>Вся продукция выпускается под строгим контролем военного представительства Министерства обороны РФ, что гарантирует высокое качество и надежность.</p>
+    </div>
+    <div class="wrapper-img">
+      <img class="half" src="img/full.png" alt="">
+    </div>
+  </div>
 
-<div class="wrapper-plane-section">
-    <div class="plane-fit">
+
+
+<div id="proiz" class="wrapper-plane-section">
+    <div  class="plane-fit">
         <div class="plane-wrapper">
     <img class="plane display-plane" src="img/plane.png">
     <img class="plane hidden-plane"src="img/plane2.png">
@@ -144,40 +225,55 @@
             <img class="third-logo" src="img/logo-list3.png">
         </div>
         <p class="main-text">ООО «ВЕРТО» — официальный представитель <br/>АО НПЦ «Авиатехнологии», компании, специализирующейся на <br/>производстве деталей сборочных единиц (ДСЕ) для авиационных и<br/> морских двигателей, разработке нестандартизированного<br/> технологического оборудования и оснастки, а также ремонте и  <br/>продлении ресурса авиационной техники и агрегатов.</p>
-        <p class="details">Узнать подробнее</p>
+        <div class="parent-d">
+        <p class="details ">Узнать подробнее</p>
+        <img class="unhover-img" src="img/w-arr.svg" alt="">
+        </div>
     </div>
     </div>
 </div>
 
-<div class="certificate">
+<div  id="cert" class="certificate">
     <div class="child-cert">
+        <div class="slider-img">
     <img class="img-cert" src="img/cert-1.png">
+     <img class="img-cert" src="img/cert-1.png">
+     <div class="dots2">
+    
+     </div>
+</div>
 
     <div class="content-cert">
         <h1>Сертификаты</h1>
-        <h2>Сертификат ГосНИИГА</h2>
-        <p>В соответствии с возросшими требованиями к организациям-поставщикам АТИ, обеспечивающим деятельность авиакомпаний по поддержанию летной годности эксплуатируемого парка ВС, ООО «ВЕРТО» прошла добровольную процедуру оценки своей деятельности на соответствие «Требованиям к организациям, осуществляющим поставку авиационно-технического имущества» предъявляемым к организациям-поставщикам АТИ в Системе добровольной сертификации объектов гражданской авиации. В 2016 году впервые был получен Сертификат соответствия, выданный в Государственном Научно-Исследовательском Институте Гражданской Авиации и продлевается регулярно.</p>
+        <h2 id="cert-name">Сертификат ГосНИИГА</h2>
+        <p id="cert-content">В соответствии с возросшими требованиями к организациям-поставщикам АТИ, обеспечивающим деятельность авиакомпаний по поддержанию летной годности эксплуатируемого парка ВС, ООО «ВЕРТО» прошла добровольную процедуру оценки своей деятельности на соответствие «Требованиям к организациям, осуществляющим поставку авиационно-технического имущества» предъявляемым к организациям-поставщикам АТИ в Системе добровольной сертификации объектов гражданской авиации. В 2016 году впервые был получен Сертификат соответствия, выданный в Государственном Научно-Исследовательском Институте Гражданской Авиации и продлевается регулярно.</p>
+        <div id="part"></div>
         <div class="nav-w">
-            <img class="nav"src="img/left.png">
-            <img class="nav" src="img/right.png">
+            <img class="nav prev"src="img/left.png">
+            <img class="nav next" src="img/right.png">
+            
         </div>
     </div>
-</div></div>
 
+</div></div>
+ 
 
 <div class="lenta">
     <div class="inner-lenta">
-    <img src="img/lenta-1.png">
-    <img src="img/lenta-2.png">
-    <img src="img/lenta-3.png">
+    <img class="first-log" src="img/lenta-1.png">
+
+    <img class="second-log"  src="img/lenta-2.png">
+
+    <img class="third-log" class="unhover-img" src="img/lenta-3.png">
+
     </div>
 </div>
 
 
-<div class="contact-us">
+<div id="contact"class="contact-us">
     <div class="cs-container">
        <div class="for-form">
-    <form>
+    <form method="post" action="send_message.php">
         <div class="input-container">
             <img class="icons-email" src="img/emai.svg" alt="Email Icon">
             <input type="email" name="email" placeholder="Ваш Email">
@@ -186,8 +282,16 @@
             <img class="icons-phone" src="img/icon-input.svg" alt="Phone Icon">
             <input type="tel" name="phone" placeholder="Ваш номер">
         </div>
-        <button>Оставить заявку</button>
+        <button id="send">Оставить заявку</button>
     </form>
+</div>
+<div class="thx">
+    <div class="i-thx">
+        <h1>Спасибо, мы получили заявку!</h1>
+        <p>Мы свяжемся свами в ближайшее время, чтобы <br/>обсудить все детали и ответить на ваши вопросы.</p>
+    </div>
+    <img class="w-close" src="img/w-close.png" alt="">
+    <img class="c-hel" src="img/helic.png" alt="">
 </div>
 
         <div class="for-text">
@@ -198,9 +302,10 @@
     </div>
     
 </div>
-        
+        <
 
-        <div class="location-section">
+
+        <div id="contact"  class="location-section">
             
             <div class="location-container">
              
@@ -238,6 +343,7 @@ min@spbverto.ru (г. Москва)</p>
                     <a href="">Сертификаты</a>
                     <a href="">Партнеры</a>
                     <a href="">Контакты</a>
+                    <img  class="up" src="img/up.svg">
                     
                    
            </nav>
@@ -257,6 +363,7 @@ min@spbverto.ru (г. Москва)</p>
            </div>
    </footer>
   
-<script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="main.js"></script>
 </body>
 </html>
